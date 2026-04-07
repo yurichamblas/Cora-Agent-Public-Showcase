@@ -28,15 +28,6 @@ This repository is a public showcase with a demo, architecture, and minimal samp
 - Streaming UX for fast feedback loops.
 - MCP-ready extensibility for tool integrations.
 
-## Demo Assets
-
-- Hero: `assets/hero/hero-main.png`
-- Thumbnail: `assets/thumbnails/demo-thumbnail.png`
-- Gallery: `assets/screenshots/`
-- Full videos: external links only (not stored in git)
-
-![Demo Thumbnail](assets/thumbnails/demo-thumbnail.png)
-
 ## Feature Gallery
 
 | Screenshot | Description |
