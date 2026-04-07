@@ -39,7 +39,8 @@ async def agentic_stream(payload: dict[str, Any], request: Request) -> Streaming
         for event in steps:
             if await request.is_disconnected():
                 return
-            yield f"data: {json.dumps(event, ensure_ascii=False)}\\n\\n"
+            yield f"data: {json.dumps(event, ensure_ascii=False)}\n\n"
             await asyncio.sleep(0.35)
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")
+
