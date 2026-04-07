@@ -1,0 +1,31 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build and logs
+*.log
+build/
+dist/
+
+# Heavy/source design files not intended for this public showcase
+*.psd
+*.af
+*.dwg
+*.3dm
+*.3dmbak
+*.zip
+*.tiff
+
+# Optional local video exports
+assets/raw-videos/
