@@ -16,7 +16,7 @@ Cora Agent turns natural language into real BIM actions inside Revit.
 - 10x faster modeling workflows
 - 100% Revit-native integration
 
-## Quick Summary (ES)
+## Quick Summary
 
 Cora Agent converts natural language into real-world actions within Revit.
 This repository is a public showcase with a demo, architecture, and minimal samples.
