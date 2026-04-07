@@ -2,7 +2,7 @@
 
 AI-Powered BIM Automation for Revit.
 
-Public showcase repository for Cora Agent. This repo demonstrates product value, architecture, and safe runnable samples without exposing production internals.
+Public showcase repository for Cora Agent. This repo demonstrates product value and architecture.
 
 [Join Waitlist](https://www.coraagent.xyz/) | [Watch Demo](https://www.coraagent.xyz/#demo) | [Pricing](https://www.coraagent.xyz/#pricing) | [Docs](https://docs.coraagent.xyz/)
 
@@ -12,22 +12,21 @@ Public showcase repository for Cora Agent. This repo demonstrates product value,
 
 Cora Agent turns natural language into real BIM actions inside Revit.
 
-- 24+ BIM tools
+- 30+ BIM tools
 - 10x faster modeling workflows
 - 100% Revit-native integration
 
 ## Quick Summary (ES)
 
-Cora Agent convierte lenguaje natural en acciones reales dentro de Revit.
-Este repositorio es un public showcase con demo, arquitectura y samples minimos.
-El core productivo permanece privado.
+Cora Agent converts natural language into real-world actions within Revit.
+This repository is a public showcase with a demo, architecture, and minimal samples.
 
 ## Product Highlights
 
-- AI-powered automation for repetitive BIM tasks
-- Native Revit workflow via C# plugin + Python backend
-- Streaming UX for fast feedback loops
-- MCP-ready extensibility for tool integrations
+- AI-powered automation for repetitive BIM tasks.
+- Native Revit workflow via plugin.
+- Streaming UX for fast feedback loops.
+- MCP-ready extensibility for tool integrations.
 
 ## Demo Assets
 
@@ -59,14 +58,9 @@ flowchart LR
   A --> L[LLM Providers]
   A <--> M[MCP Servers Optional]
 ```
-
-- Plugin reads backend URL from `BIMAGENT_API_BASE`.
-- Backend streams events over `text/event-stream`.
-- Tool execution applies BIM actions with validation and transaction safety.
-
 ## Pricing (Brief)
 
-The website currently presents three plans (as shown on April 7, 2026):
+Currently presents three plans (as shown on April 7, 2026):
 
 - Basic (On Demand): free beta credits + pay as you go
 - Regular: USD 20/month
