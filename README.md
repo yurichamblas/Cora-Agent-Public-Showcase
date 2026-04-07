@@ -64,35 +64,6 @@ flowchart LR
 - Backend streams events over `text/event-stream`.
 - Tool execution applies BIM actions with validation and transaction safety.
 
-## Quickstart (3 Steps)
-
-1. Clone and install demo backend dependencies
-
-```bash
-git clone https://github.com/yurichamblas/Cora-Agent-Public-Showcase.git
-cd Cora-Agent-Public-Showcase
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS/Linux
-# source .venv/bin/activate
-pip install -r samples/backend-demo/requirements.txt
-```
-
-2. Run demo backend
-
-```bash
-uvicorn app:app --app-dir samples/backend-demo --reload --port 8000
-```
-
-3. Test SSE stream
-
-```bash
-curl -N -X POST "http://127.0.0.1:8000/api/agentic-stream" \
-  -H "Content-Type: application/json" \
-  -d "{\"user_message\":\"Create a 6m wall on Ground Floor\",\"history\":[]}"
-```
-
 ## Pricing (Brief)
 
 The website currently presents three plans (as shown on April 7, 2026):
@@ -102,52 +73,6 @@ The website currently presents three plans (as shown on April 7, 2026):
 - Enterprise: USD 50/month
 
 For latest and official pricing details: https://www.coraagent.xyz/#pricing
-
-## Public vs Private Scope
-
-Public in this repo:
-
-- Landing README and visuals
-- Safe sample backend with SSE
-- Minimal C# sample (`Wall.Create`) for educational reference
-- Security and contribution guidelines
-
-Private in production core:
-
-- Full orchestration logic and production prompts
-- Commercial integrations and plan enforcement internals
-- Production credentials, infra details, and sensitive runbooks
-
-## Security Basics
-
-- Never commit secrets.
-- Use `.env.example` templates only.
-- Keep real values in `.env.local` or secret managers.
-- Secret scanning runs in pre-commit and GitHub Actions.
-
-See [SECURITY.md](SECURITY.md) and [docs/sanitization-checklist.md](docs/sanitization-checklist.md).
-
-## Project Structure
-
-```text
-.
-|- README.md
-|- assets/
-|  |- hero/
-|  |- logo/
-|  |- screenshots/
-|  |- thumbnails/
-|- docs/
-|  |- architecture.md
-|  |- sanitization-checklist.md
-|- samples/
-|  |- backend-demo/
-|  |- revit-plugin-sample/
-|- CONTRIBUTING.md
-|- SECURITY.md
-|- NOTICE
-|- LICENSE
-```
 
 ## Brand
 
